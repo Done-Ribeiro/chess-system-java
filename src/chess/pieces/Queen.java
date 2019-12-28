@@ -12,11 +12,6 @@ public class Queen extends ChessPiece {
 	}
 
 	@Override
-	public String toString() {
-		return "Q";
-	}
-
-	@Override
 	public boolean[][] possibleMoves() {
 		boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 
@@ -105,4 +100,9 @@ public class Queen extends ChessPiece {
 		return mat;
 	}
 
+	@Override
+	public String toString() {
+		return "Q";
+	}
+	
 }
